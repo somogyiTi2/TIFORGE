@@ -1,0 +1,14 @@
+.main {
+  text-align: center;
+  background-color: var(--background-color);
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--white);
+}
+.footer {
+  height: 10vh;
+}
