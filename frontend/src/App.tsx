@@ -6,6 +6,8 @@ import HomePage from './pages/HomePage';
 import Exercises from './pages/Exercises';
 import Exercise from './pages/Exercise';
 import RootLayout from './pages/Root';
+import History from './pages/History';
+import Goals from './pages/Goals';
 
 const router = createBrowserRouter([
   {
@@ -22,16 +24,21 @@ const router = createBrowserRouter([
         element: <Exercises />,
       },
       { path: 'exercise/:id', element: <Exercise /> },
+      {
+        path: 'history',
+        element: <History />,
+      },
+      {
+        path: 'goals',
+        element: <Goals />,}
     ],
   },
 ]);
 
 function App() {
   return (
-    <div className="App">
-      <main className="App-main">
-        <RouterProvider router={router} />
-      </main>
+    <div>
+      <RouterProvider router={router} />
     </div>
   );
 }
